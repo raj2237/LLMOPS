@@ -23,8 +23,7 @@ jobs:
 
       - name: Sync dependencies with uv (locked)
         run: |
-          uv sync --frozen
-
+          uv sync
           uv pip install pytest langchain-nomic
       - name: Run tests
         env:
