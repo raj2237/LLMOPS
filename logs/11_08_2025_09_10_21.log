@@ -1,0 +1,34 @@
+{"timestamp": "2025-11-08T03:40:52.753496Z", "level": "info", "event": "Running in LOCAL mode: .env loaded"}
+{"timestamp": "2025-11-08T03:40:52.753967Z", "level": "info", "event": "Loaded GROQ_API_KEY from individual env var"}
+{"timestamp": "2025-11-08T03:40:52.754174Z", "level": "info", "event": "Loaded GOOGLE_API_KEY from individual env var"}
+{"keys": {"GROQ_API_KEY": "gsk_Fu...", "GOOGLE_API_KEY": "AIzaSy..."}, "timestamp": "2025-11-08T03:40:52.754330Z", "level": "info", "event": "API keys loaded"}
+{"config_keys": ["embedding_model", "retriever", "llm"], "timestamp": "2025-11-08T03:40:52.767181Z", "level": "info", "event": "YAML config loaded"}
+{"session_id": "session_20251108_091052_04ed5a8e", "temp_dir": "data\\session_20251108_091052_04ed5a8e", "faiss_dir": "faiss_index\\session_20251108_091052_04ed5a8e", "sessionized": true, "timestamp": "2025-11-08T03:40:52.769765Z", "level": "info", "event": "ChatIngestor initialized"}
+{"uploaded": "REPORT -2.pdf", "saved_as": "data\\session_20251108_091052_04ed5a8e\\63ea84c5.pdf", "timestamp": "2025-11-08T03:40:52.776579Z", "level": "info", "event": "File saved for ingestion"}
+{"count": 38, "timestamp": "2025-11-08T03:40:53.856428Z", "level": "info", "event": "Documents loaded"}
+{"chunks": 88, "chunk_size": 1000, "overlap": 200, "timestamp": "2025-11-08T03:40:53.859116Z", "level": "info", "event": "Documents split"}
+{"timestamp": "2025-11-08T03:40:53.859934Z", "level": "info", "event": "Using NomicEmbeddings (nomic-embed-text-v1.5) for FAISS index"}
+Loading faiss with AVX512 support.
+Could not load library with AVX512 support due to:
+ModuleNotFoundError("No module named 'faiss.swigfaiss_avx512'")
+Loading faiss with AVX2 support.
+Successfully loaded faiss with AVX2 support.
+{"added": 1, "index": "faiss_index\\session_20251108_091052_04ed5a8e", "timestamp": "2025-11-08T03:40:59.141589Z", "level": "info", "event": "FAISS index updated"}
+{"k": 5, "fetch_k": 20, "lambda_mult": 0.5, "timestamp": "2025-11-08T03:40:59.141994Z", "level": "info", "event": "Using MMR search"}
+{"timestamp": "2025-11-08T03:41:06.366914Z", "level": "info", "event": "Running in LOCAL mode: .env loaded"}
+{"timestamp": "2025-11-08T03:41:06.367681Z", "level": "info", "event": "Loaded GROQ_API_KEY from individual env var"}
+{"timestamp": "2025-11-08T03:41:06.368309Z", "level": "info", "event": "Loaded GOOGLE_API_KEY from individual env var"}
+{"keys": {"GROQ_API_KEY": "gsk_Fu...", "GOOGLE_API_KEY": "AIzaSy..."}, "timestamp": "2025-11-08T03:41:06.369008Z", "level": "info", "event": "API keys loaded"}
+{"config_keys": ["embedding_model", "retriever", "llm"], "timestamp": "2025-11-08T03:41:06.375772Z", "level": "info", "event": "YAML config loaded"}
+{"provider": "google", "model": "gemini-2.0-flash", "timestamp": "2025-11-08T03:41:06.379559Z", "level": "info", "event": "Loading LLM"}
+{"session_id": "session_20251108_091052_04ed5a8e", "timestamp": "2025-11-08T03:41:06.580699Z", "level": "info", "event": "LLM loaded successfully"}
+{"session_id": "session_20251108_091052_04ed5a8e", "timestamp": "2025-11-08T03:41:06.582457Z", "level": "info", "event": "ConversationalRAG initialized"}
+{"timestamp": "2025-11-08T03:41:06.584410Z", "level": "info", "event": "Running in LOCAL mode: .env loaded"}
+{"timestamp": "2025-11-08T03:41:06.584800Z", "level": "info", "event": "Loaded GROQ_API_KEY from individual env var"}
+{"timestamp": "2025-11-08T03:41:06.585029Z", "level": "info", "event": "Loaded GOOGLE_API_KEY from individual env var"}
+{"keys": {"GROQ_API_KEY": "gsk_Fu...", "GOOGLE_API_KEY": "AIzaSy..."}, "timestamp": "2025-11-08T03:41:06.585200Z", "level": "info", "event": "API keys loaded"}
+{"config_keys": ["embedding_model", "retriever", "llm"], "timestamp": "2025-11-08T03:41:06.589393Z", "level": "info", "event": "YAML config loaded"}
+{"model": "nomic-embed-text-v1.5", "timestamp": "2025-11-08T03:41:06.589761Z", "level": "info", "event": "Loading embedding model"}
+{"session_id": "session_20251108_091052_04ed5a8e", "timestamp": "2025-11-08T03:41:06.638493Z", "level": "info", "event": "LCEL graph built successfully"}
+{"index_path": "faiss_index/session_20251108_091052_04ed5a8e", "index_name": "index", "search_type": "mmr", "k": 5, "fetch_k": 20, "lambda_mult": 0.5, "session_id": "session_20251108_091052_04ed5a8e", "timestamp": "2025-11-08T03:41:06.638988Z", "level": "info", "event": "FAISS retriever loaded successfully"}
+{"session_id": "session_20251108_091052_04ed5a8e", "user_input": "What is the report all about ?!", "answer_preview": "The report is about snow cover, glacier melt, and river discharge calibration, with a case study from the Hindu Kush Himalayas. It discusses the impor", "timestamp": "2025-11-08T03:41:10.208784Z", "level": "info", "event": "Chain invoked successfully"}

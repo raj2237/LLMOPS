@@ -1,0 +1,37 @@
+{"timestamp": "2025-11-06T11:22:07.565482Z", "level": "info", "event": "Running in LOCAL mode: .env loaded"}
+{"timestamp": "2025-11-06T11:22:07.565860Z", "level": "info", "event": "Loaded GROQ_API_KEY from individual env var"}
+{"timestamp": "2025-11-06T11:22:07.566043Z", "level": "info", "event": "Loaded GOOGLE_API_KEY from individual env var"}
+{"keys": {"GROQ_API_KEY": "gsk_Fu...", "GOOGLE_API_KEY": "AIzaSy..."}, "timestamp": "2025-11-06T11:22:07.566186Z", "level": "info", "event": "API keys loaded"}
+{"config_keys": ["embedding_model", "retriever", "llm"], "timestamp": "2025-11-06T11:22:07.568523Z", "level": "info", "event": "YAML config loaded"}
+{"session_id": "session_20251106_165207_25d69f89", "temp_dir": "data\\session_20251106_165207_25d69f89", "faiss_dir": "faiss_index\\session_20251106_165207_25d69f89", "sessionized": true, "timestamp": "2025-11-06T11:22:07.571264Z", "level": "info", "event": "ChatIngestor initialized"}
+{"uploaded": "D:/LLMOPS/data/REPORT -2.pdf", "saved_as": "data\\session_20251106_165207_25d69f89\\7fd3ce19.pdf", "timestamp": "2025-11-06T11:22:07.575213Z", "level": "info", "event": "File saved for ingestion"}
+{"count": 38, "timestamp": "2025-11-06T11:22:09.320613Z", "level": "info", "event": "Documents loaded"}
+{"chunks": 371, "chunk_size": 200, "overlap": 20, "timestamp": "2025-11-06T11:22:09.326884Z", "level": "info", "event": "Documents split"}
+{"timestamp": "2025-11-06T11:22:09.327961Z", "level": "info", "event": "Using NomicEmbeddings (nomic-embed-text-v1.5) for FAISS index"}
+Loading faiss with AVX512 support.
+Could not load library with AVX512 support due to:
+ModuleNotFoundError("No module named 'faiss.swigfaiss_avx512'")
+Loading faiss with AVX2 support.
+Successfully loaded faiss with AVX2 support.
+{"added": 1, "index": "faiss_index\\session_20251106_165207_25d69f89", "timestamp": "2025-11-06T11:22:17.653507Z", "level": "info", "event": "FAISS index updated"}
+{"k": 5, "fetch_k": 20, "lambda_mult": 0.5, "timestamp": "2025-11-06T11:22:17.653972Z", "level": "info", "event": "Using MMR search"}
+{"timestamp": "2025-11-06T11:22:17.655884Z", "level": "info", "event": "Running in LOCAL mode: .env loaded"}
+{"timestamp": "2025-11-06T11:22:17.656150Z", "level": "info", "event": "Loaded GROQ_API_KEY from individual env var"}
+{"timestamp": "2025-11-06T11:22:17.656444Z", "level": "info", "event": "Loaded GOOGLE_API_KEY from individual env var"}
+{"keys": {"GROQ_API_KEY": "gsk_Fu...", "GOOGLE_API_KEY": "AIzaSy..."}, "timestamp": "2025-11-06T11:22:17.656713Z", "level": "info", "event": "API keys loaded"}
+{"config_keys": ["embedding_model", "retriever", "llm"], "timestamp": "2025-11-06T11:22:17.658441Z", "level": "info", "event": "YAML config loaded"}
+{"provider": "google", "model": "gemini-2.0-flash", "timestamp": "2025-11-06T11:22:17.658614Z", "level": "info", "event": "Loading LLM"}
+{"session_id": "session_20251106_165207_25d69f89", "timestamp": "2025-11-06T11:22:17.792043Z", "level": "info", "event": "LLM loaded successfully"}
+{"session_id": "session_20251106_165207_25d69f89", "timestamp": "2025-11-06T11:22:17.792312Z", "level": "info", "event": "ConversationalRAG initialized"}
+{"timestamp": "2025-11-06T11:22:17.793410Z", "level": "info", "event": "Running in LOCAL mode: .env loaded"}
+{"timestamp": "2025-11-06T11:22:17.793685Z", "level": "info", "event": "Loaded GROQ_API_KEY from individual env var"}
+{"timestamp": "2025-11-06T11:22:17.793919Z", "level": "info", "event": "Loaded GOOGLE_API_KEY from individual env var"}
+{"keys": {"GROQ_API_KEY": "gsk_Fu...", "GOOGLE_API_KEY": "AIzaSy..."}, "timestamp": "2025-11-06T11:22:17.794132Z", "level": "info", "event": "API keys loaded"}
+{"config_keys": ["embedding_model", "retriever", "llm"], "timestamp": "2025-11-06T11:22:17.796183Z", "level": "info", "event": "YAML config loaded"}
+{"model": "nomic-embed-text-v1.5", "timestamp": "2025-11-06T11:22:17.796969Z", "level": "info", "event": "Loading embedding model"}
+{"session_id": "session_20251106_165207_25d69f89", "timestamp": "2025-11-06T11:22:17.821401Z", "level": "info", "event": "LCEL graph built successfully"}
+{"index_path": "faiss_index\\session_20251106_165207_25d69f89", "index_name": "index", "search_type": "mmr", "k": 5, "fetch_k": 20, "lambda_mult": 0.5, "session_id": "session_20251106_165207_25d69f89", "timestamp": "2025-11-06T11:22:17.821740Z", "level": "info", "event": "FAISS retriever loaded successfully"}
+{"session_id": "session_20251106_165207_25d69f89", "user_input": "What is the report all about ?", "answer_preview": "The project report is about snow cover, glacier melt, and river streamflow discharge. It also discusses the integration of percentile-based classifica", "timestamp": "2025-11-06T11:22:27.333939Z", "level": "info", "event": "Chain invoked successfully"}
+{"session_id": "session_20251106_165207_25d69f89", "user_input": "Okay which region is being considered in the report and what is actually calcualted?", "answer_preview": "The region considered in the report is the Hindukush\u2013Karakoram\u2013Himalaya region in Pakistan. The report calculates the mean values for each region and ", "timestamp": "2025-11-06T11:22:54.359756Z", "level": "info", "event": "Chain invoked successfully"}
+{"session_id": "session_20251106_165207_25d69f89", "user_input": "What is water availability ?", "answer_preview": "Water availability is the amount of water that is physically accessible and safe to use. It is defined as the volumetric flow rate of available water ", "timestamp": "2025-11-06T11:23:11.912361Z", "level": "info", "event": "Chain invoked successfully"}
+{"session_id": "session_20251106_165207_25d69f89", "user_input": "which model has been used ?", "answer_preview": "The report mentions using Long Short-Term Memory (LSTM) for rainfall-runoff modeling. It also mentions using a mix of different models, which is refer", "timestamp": "2025-11-06T11:23:29.691738Z", "level": "info", "event": "Chain invoked successfully"}

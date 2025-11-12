@@ -1,0 +1,34 @@
+{"timestamp": "2025-11-07T03:39:08.639527Z", "level": "info", "event": "Running in LOCAL mode: .env loaded"}
+{"timestamp": "2025-11-07T03:39:08.639901Z", "level": "info", "event": "Loaded GROQ_API_KEY from individual env var"}
+{"timestamp": "2025-11-07T03:39:08.640072Z", "level": "info", "event": "Loaded GOOGLE_API_KEY from individual env var"}
+{"keys": {"GROQ_API_KEY": "gsk_Fu...", "GOOGLE_API_KEY": "AIzaSy..."}, "timestamp": "2025-11-07T03:39:08.640202Z", "level": "info", "event": "API keys loaded"}
+{"config_keys": ["embedding_model", "retriever", "llm"], "timestamp": "2025-11-07T03:39:08.642206Z", "level": "info", "event": "YAML config loaded"}
+{"session_id": "session_20251107_090908_678d727e", "temp_dir": "data\\session_20251107_090908_678d727e", "faiss_dir": "faiss_index\\session_20251107_090908_678d727e", "sessionized": true, "timestamp": "2025-11-07T03:39:08.643483Z", "level": "info", "event": "ChatIngestor initialized"}
+{"uploaded": "D:/LLMOPS/data/REPORT -2.pdf", "saved_as": "data\\session_20251107_090908_678d727e\\af3a97eb.pdf", "timestamp": "2025-11-07T03:39:08.648274Z", "level": "info", "event": "File saved for ingestion"}
+{"count": 38, "timestamp": "2025-11-07T03:39:09.629622Z", "level": "info", "event": "Documents loaded"}
+{"chunks": 371, "chunk_size": 200, "overlap": 20, "timestamp": "2025-11-07T03:39:09.633993Z", "level": "info", "event": "Documents split"}
+{"timestamp": "2025-11-07T03:39:09.635083Z", "level": "info", "event": "Using NomicEmbeddings (nomic-embed-text-v1.5) for FAISS index"}
+Loading faiss with AVX512 support.
+Could not load library with AVX512 support due to:
+ModuleNotFoundError("No module named 'faiss.swigfaiss_avx512'")
+Loading faiss with AVX2 support.
+Successfully loaded faiss with AVX2 support.
+{"added": 1, "index": "faiss_index\\session_20251107_090908_678d727e", "timestamp": "2025-11-07T03:39:16.747635Z", "level": "info", "event": "FAISS index updated"}
+{"k": 5, "fetch_k": 20, "lambda_mult": 0.5, "timestamp": "2025-11-07T03:39:16.748067Z", "level": "info", "event": "Using MMR search"}
+{"timestamp": "2025-11-07T03:39:16.749545Z", "level": "info", "event": "Running in LOCAL mode: .env loaded"}
+{"timestamp": "2025-11-07T03:39:16.749956Z", "level": "info", "event": "Loaded GROQ_API_KEY from individual env var"}
+{"timestamp": "2025-11-07T03:39:16.750194Z", "level": "info", "event": "Loaded GOOGLE_API_KEY from individual env var"}
+{"keys": {"GROQ_API_KEY": "gsk_Fu...", "GOOGLE_API_KEY": "AIzaSy..."}, "timestamp": "2025-11-07T03:39:16.750363Z", "level": "info", "event": "API keys loaded"}
+{"config_keys": ["embedding_model", "retriever", "llm"], "timestamp": "2025-11-07T03:39:16.752153Z", "level": "info", "event": "YAML config loaded"}
+{"provider": "google", "model": "gemini-2.0-flash", "timestamp": "2025-11-07T03:39:16.752343Z", "level": "info", "event": "Loading LLM"}
+{"session_id": "session_20251107_090908_678d727e", "timestamp": "2025-11-07T03:39:16.773960Z", "level": "info", "event": "LLM loaded successfully"}
+{"session_id": "session_20251107_090908_678d727e", "timestamp": "2025-11-07T03:39:16.774333Z", "level": "info", "event": "ConversationalRAG initialized"}
+{"timestamp": "2025-11-07T03:39:16.775918Z", "level": "info", "event": "Running in LOCAL mode: .env loaded"}
+{"timestamp": "2025-11-07T03:39:16.776173Z", "level": "info", "event": "Loaded GROQ_API_KEY from individual env var"}
+{"timestamp": "2025-11-07T03:39:16.776333Z", "level": "info", "event": "Loaded GOOGLE_API_KEY from individual env var"}
+{"keys": {"GROQ_API_KEY": "gsk_Fu...", "GOOGLE_API_KEY": "AIzaSy..."}, "timestamp": "2025-11-07T03:39:16.776505Z", "level": "info", "event": "API keys loaded"}
+{"config_keys": ["embedding_model", "retriever", "llm"], "timestamp": "2025-11-07T03:39:16.778627Z", "level": "info", "event": "YAML config loaded"}
+{"model": "nomic-embed-text-v1.5", "timestamp": "2025-11-07T03:39:16.778871Z", "level": "info", "event": "Loading embedding model"}
+{"session_id": "session_20251107_090908_678d727e", "timestamp": "2025-11-07T03:39:16.809250Z", "level": "info", "event": "LCEL graph built successfully"}
+{"index_path": "faiss_index\\session_20251107_090908_678d727e", "index_name": "index", "search_type": "mmr", "k": 5, "fetch_k": 20, "lambda_mult": 0.5, "session_id": "session_20251107_090908_678d727e", "timestamp": "2025-11-07T03:39:16.809856Z", "level": "info", "event": "FAISS retriever loaded successfully"}
+{"session_id": "session_20251107_090908_678d727e", "user_input": "What is Astore?", "answer_preview": "Astore is a moderately glacierized basin important for hydropower generation, with well-monitored water availability for operational purposes. It also", "timestamp": "2025-11-07T03:39:28.491537Z", "level": "info", "event": "Chain invoked successfully"}

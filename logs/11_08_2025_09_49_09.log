@@ -1,0 +1,20 @@
+HTTP Request: POST http://testserver/chat "HTTP/1.1 400 Bad Request"
+HTTP Request: POST http://testserver/chat "HTTP/1.1 400 Bad Request"
+HTTP Request: POST http://testserver/chat "HTTP/1.1 200 OK"
+HTTP Request: POST http://testserver/chat "HTTP/1.1 500 Internal Server Error"
+HTTP Request: POST http://testserver/upload "HTTP/1.1 200 OK"
+HTTP Request: POST http://testserver/upload "HTTP/1.1 422 Unprocessable Entity"
+HTTP Request: POST http://testserver/upload "HTTP/1.1 500 Internal Server Error"
+{"session_id": "session_20251108_094911_6bccf880", "temp_dir": "data\\session_20251108_094911_6bccf880", "faiss_dir": "faiss_index\\session_20251108_094911_6bccf880", "sessionized": true, "timestamp": "2025-11-08T04:19:11.807873Z", "level": "info", "event": "ChatIngestor initialized"}
+{"session_id": "session_20251108_094911_e90285e3", "temp_dir": "data\\session_20251108_094911_e90285e3", "faiss_dir": "faiss_index\\session_20251108_094911_e90285e3", "sessionized": true, "timestamp": "2025-11-08T04:19:11.816570Z", "level": "info", "event": "ChatIngestor initialized"}
+{"chunks": 3, "chunk_size": 500, "overlap": 100, "timestamp": "2025-11-08T04:19:11.818142Z", "level": "info", "event": "Documents split"}
+{"timestamp": "2025-11-08T04:19:11.825750Z", "level": "info", "event": "Using NomicEmbeddings (nomic-embed-text-v1.5) for FAISS index"}
+Loading faiss with AVX512 support.
+Could not load library with AVX512 support due to:
+ModuleNotFoundError("No module named 'faiss.swigfaiss_avx512'")
+Loading faiss with AVX2 support.
+Successfully loaded faiss with AVX2 support.
+{"session_id": "s1", "timestamp": "2025-11-08T04:19:14.780022Z", "level": "info", "event": "LLM loaded successfully"}
+{"session_id": "s1", "timestamp": "2025-11-08T04:19:14.780253Z", "level": "info", "event": "ConversationalRAG initialized"}
+{"error": "Error in [<unknown>] at line [-1] | Message: RAG chain not initialized. Call load_retriever_from_faiss() before invoke().", "timestamp": "2025-11-08T04:19:14.780407Z", "level": "error", "event": "Failed to invoke ConversationalRAG"}
+{"error": "FAISS index directory not found: faiss_index/does_not_exist", "timestamp": "2025-11-08T04:19:14.781314Z", "level": "error", "event": "Failed to load retriever from FAISS"}
