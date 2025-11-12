@@ -13,6 +13,7 @@ from datetime import datetime
 from multi_doc_chat.utils.file_io import save_uploaded_files
 from multi_doc_chat.utils.document_ops import load_documents
 import hashlib
+from langchain_nomic import NomicEmbeddings
 import sys
 
 
@@ -134,7 +135,6 @@ class FaissManager:
         self.model_loader = model_loader or ModelLoader()
         # Prefer explicit use of Nomic embeddings everywhere. Fall back to model loader only if nomic isn't available.
         try:
-            from langchain_nomic import NomicEmbeddings
             self.emb = NomicEmbeddings(model="nomic-embed-text-v1.5")
             log.info("Using NomicEmbeddings (nomic-embed-text-v1.5) for FAISS index")
         except Exception as e:
