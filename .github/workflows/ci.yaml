@@ -24,12 +24,14 @@ jobs:
       - name: Sync dependencies with uv (locked)
         run: |
           uv sync --frozen
-          uv pip install pytest
+
+          uv pip install pytest langchain-nomic
       - name: Run tests
         env:
           PYTHONPATH: ${{ github.workspace }}/multi_doc_chat
           GROQ_API_KEY: dummy
           GOOGLE_API_KEY: dummy
           LLM_PROVIDER: google
+
         run: |
           uv run pytest -q
